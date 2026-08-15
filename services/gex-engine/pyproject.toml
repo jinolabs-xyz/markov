@@ -1,0 +1,24 @@
+[project]
+name = "gex-engine"
+version = "0.0.0"
+description = "Options positioning (gamma exposure) computation engine for Sextant."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+  "pytest>=8",
+  "ruff>=0.6",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/gex_engine"]
