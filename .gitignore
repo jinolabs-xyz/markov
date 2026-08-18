@@ -41,3 +41,8 @@ Thumbs.db
 # Coverage & caches
 coverage/
 .cache/
+
+# Tooling (re-provisioned locally, not product source)
+.claude/
+.impeccable/
+.wrangler/
