@@ -58,9 +58,9 @@ export default function Home() {
       <main id="top" className="flex-1">
         {/* ---------- hero ---------- */}
         <section className="u-lattice border-b border-[var(--line)]">
-          <div className="u-shell grid items-center gap-10 py-16 md:grid-cols-[1.02fr_1fr] md:gap-14 md:py-24">
+          <div className="u-shell grid items-center gap-10 py-14 md:grid-cols-2 md:gap-14 md:py-20">
             <div>
-              <h1 className="u-h1 text-[var(--ink)]">
+              <h1 className="u-h1 max-w-[15ch] text-[var(--ink)]">
                 Read the hidden structure the futures market moves on.
               </h1>
               <p className="u-lede mt-7 max-w-[46ch]">
@@ -96,7 +96,7 @@ export default function Home() {
                 <span>ES &middot; random walk, bounded by positioning</span>
                 <span className="text-[var(--accent)]">live model</span>
               </div>
-              <div className="h-[300px] overflow-hidden rounded-xl border border-[var(--line)] bg-[var(--surface)] sm:h-[380px] md:h-[440px]">
+              <div className="h-[280px] overflow-hidden rounded-xl border border-[var(--line)] bg-[var(--surface)] sm:h-[340px] md:h-[380px]">
                 <MarkovField />
               </div>
               <p className="u-mono mt-2 text-[0.68rem] text-[var(--ink-3)]">

@@ -30,26 +30,11 @@
   --font-mono: var(--font-geist-mono), ui-monospace, "SF Mono", Menlo, monospace;
 
   --maxw: 1200px;
+  color-scheme: light;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --paper: #08090c;
-    --surface: #0e1015;
-    --ink: #eef0f4;
-    --ink-2: #a7adb8;
-    --ink-3: #6d747f;
-    --line: #1c2028;
-    --line-2: #2a2f39;
-    --accent: #5b76ff;
-    --accent-press: #7188ff;
-    --accent-wash: #131a33;
-    --on-accent: #060810;
-    --up: #2ec48d;
-    --down: #ff6b6f;
-    --lattice: rgba(255, 255, 255, 0.055);
-  }
-}
+/* Committed to a single bright world (pinned reference: supermemory.ai);
+   the auto-dark variant diverged from the pin and read as empty. */
 
 @theme inline {
   --color-paper: var(--paper);
@@ -158,10 +143,10 @@ a {
 .u-h1 {
   font-family: var(--font-display);
   font-weight: 700;
-  letter-spacing: -0.04em;
-  line-height: 0.98;
+  letter-spacing: -0.038em;
+  line-height: 1.02;
   text-wrap: balance;
-  font-size: clamp(2.6rem, 6.4vw, 5.4rem);
+  font-size: clamp(2.1rem, 4.2vw, 3.4rem);
 }
 .u-h2 {
   font-family: var(--font-display);
